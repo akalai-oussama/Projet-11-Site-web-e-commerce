@@ -194,22 +194,21 @@ if(isset($_GET["id"])){
                     <div class="row product-details">
                         <div class="col-lg-6">
                             <div class="product-details-thumb">
-                                <img src="./img/<?php echo $data->getImage() ?>" width="570" height="693" alt="Image">
-                                <span class="flag-new">new</span>
+                                    <?php
+                            $bdd = new PDO('mysql:host=localhost;dbname=e-commerce;charset=utf8','root','');
+                            $req = $bdd->query('SELECT photo From product'  );
+                            while($donnees = $req->fetch()){
+                                echo('<img styles ="width:50px;hight:50px;border-radius;:500px;" src ="'.$donnees['photo'].'"/><br>' );
+                                
+                            }
+                            ?>                                  <span class="flag-new">new</span>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="product-details-content">
-                                <h5 class="product-details-collection">Premioum collection</h5>
                                 <h3 class="product-details-title"><?php echo $data->getName() ?></h3>
                                 <div class="product-details-review">
-                                    <div class="product-review-icon">
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-half-o"></i>
-                                    </div>
+
                                     <button type="button" class="product-review-show"><?php echo $data->getCategory() ?></button>
                                 </div>
                                 <div class="product-details-qty-list">
@@ -243,63 +242,7 @@ if(isset($_GET["id"])){
                         </div>
                     </div>
                  
-        <!--== Start Footer Area Wrapper ==-->
-        <footer class="footer-area">
-            <!--== Start Footer Main ==-->
-            <div class="footer-main">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="widget-item">
-                                <div class="widget-about">
-                                    <a class="widget-logo" href="index.php">
-                                        <img src="assets/images/logo.webp" width="95" height="68" alt="Logo">
-                                    </a>
-                                    <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-5 mt-md-0 mt-9">
-                            <div class="widget-item">
-                                <h4 class="widget-title">Information</h4>
-                                <ul class="widget-nav">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="about-us.html">About us</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                    <li><a href="faq.html">Privacy</a></li>
-                                    <li><a href="account-login.html">Login</a></li>
-                                    <li><a href="product.html">Shop</a></li>
-                                    <li><a href="my-account.html">My Account</a></li>
-                                    <li><a href="faq.html">FAQs</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mt-lg-0 mt-6">
-                            <div class="widget-item">
-                                <h4 class="widget-title">Social Info</h4>
-                                <div class="widget-social">
-                                    <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
-                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
-                                    <a href="https://www.pinterest.com/" target="_blank" rel="noopener"><i class="fa fa-pinterest-p"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--== End Footer Main ==-->
-
-            <!--== Start Footer Bottom ==-->
-            <div class="footer-bottom">
-                <div class="container pt-0 pb-0">
-                    <div class="footer-bottom-content">
-                        <p class="copyright">© 2022 Brancy. Made with <i class="fa fa-heart"></i> by <a target="_blank" href="https://themeforest.net/user/codecarnival">Codecarnival.</a></p>
-                    </div>
-                </div>
-            </div>
-            <!--== End Footer Bottom ==-->
-        </footer>
-        <!--== End Footer Area Wrapper ==-->
+     
 
         <!--== Scroll Top Button ==-->
         <div id="scroll-to-top" class="scroll-to-top"><span class="fa fa-angle-up"></span></div>
@@ -447,16 +390,28 @@ if(isset($_GET["id"])){
                     <li class="aside-product-list-item">
                         <a href="#/" class="remove">×</a>
                         <a href="product-details.php">
-                            <img src="assets/images/shop/cart1.webp" width="68" height="84" alt="Image">
-                            <span class="product-title">Leather Mens Slipper</span>
+                        <?php
+                            $bdd = new PDO('mysql:host=localhost;dbname=e-commerce;charset=utf8','root','');
+                            $req = $bdd->query('SELECT photo From product'  );
+                            while($donnees = $req->fetch()){
+                                echo('<img style ="margin-top:30px;" src ="'.$donnees['photo'].'"/><br>' );
+                                
+                            }
+                            ?>                              <span class="product-title">Leather Mens Slipper</span>
                         </a>
                         <span class="product-price">1 × £69.99</span>
                     </li>
                     <li class="aside-product-list-item">
                         <a href="#/" class="remove">×</a>
                         <a href="product-details.php">
-                            <img src="assets/images/shop/cart2.webp" width="68" height="84" alt="Image">
-                            <span class="product-title">Quickiin Mens shoes</span>
+                        <?php
+                            $bdd = new PDO('mysql:host=localhost;dbname=e-commerce;charset=utf8','root','');
+                            $req = $bdd->query('SELECT photo From product'  );
+                            while($donnees = $req->fetch()){
+                                echo('<img style ="margin-top:30px;" src ="'.$donnees['photo'].'"/><br>' );
+                                
+                            }
+                            ?>                                 <span class="product-title">Quickiin Mens shoes</span>
                         </a>
                         <span class="product-price">1 × £20.00</span>
                     </li>

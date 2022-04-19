@@ -65,46 +65,24 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                     <div class="col-5 col-lg-2 col-xl-1">
                         <div class="header-logo">
                             <a href="index.php">
-                                <img class="logo-main" src="assets/images/logo.webp" width="95" height="68" alt="Logo" />
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-7 col-xl-7 d-none d-lg-block">
                         <div class="header-navigation ps-7">
                             <ul class="main-nav justify-content-start">
-                                <li class="has-submenu"><a href="index.php">home</a>
+                                <li class="has-submenu"><a  href="index.php">home</a>
                                         
-                                </li>
-                                <li><a href="about-us.php">about</a></li>
-                                <li class="has-submenu position-static"><a href="#">shop</a>
-                                    <ul class="submenu-nav-mega">
-                                        <li><a href="#/" class="mega-title">categories</a>
-                                            <ul>
-                                                
-                                                <li><a href="hare-care.php">Hare care</a></li>
-                                                <li><a href="Face-care.php">Face care</a></li>
-                                                <li><a href="blusher.php">Blusher</a></li>
-                                                <li><a href="lip-stick.php">Lip stick</a></li>
-                                                <li><a href="skin-care.php">Skin care</a></li>
-                                            </ul>
-                                        </li>
-                                       
-                                      
-                                    </ul>
-                                </li>
+
                                 
-                                <li><a href="contact.php">Contact</a></li>
+                              
                             </ul>
                         </div>
                     </div>
                     <div class="col-7 col-lg-3 col-xl-4">
                         <div class="header-action justify-content-end">
-                            <button class="header-action-btn ms-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#AsideOffcanvasSearch" aria-controls="AsideOffcanvasSearch">
-                                <span class="icon">
-                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect class="icon-rect" width="30" height="30" fill="url(#pattern1)"/>
+
                     <defs>
-                      <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
                         <use xlink:href="#image0_504:11" transform="scale(0.0333333)"/>
                       </pattern>
                       <image id="image0_504:11" width="30" height="30" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABiUlEQVRIie2Wu04CQRSGP0G2EUtIbHwA8B3EQisLIcorEInx8hbEZ9DKy6toDI1oAgalNFpDoYWuxZzJjoTbmSXERP7kZDbZ859vdmb27MJcf0gBUAaugRbQk2gBV3IvmDa0BLwA4Zh4BorTACaAU6fwPXAI5IAliTxwBDScvJp4vWWhH0BlTLEEsC+5Fu6lkgNdV/gKDnxHCw2I9rSiNQNV8baBlMZYJtpTn71KAg9SY3dUYn9xezLPgG8P8BdwLteq5X7CzDbnAbXKS42WxtQVUzoGeFlqdEclxXrnhmhhkqR+8KuMqzHA1vumAddl3IwB3pLxVmOyr1NjwKQmURJ4lBp7GmOAafghpg1qdSDeDrCoNReJWmZB4dsAPsW7rYVa1Rx4FbOEw5TEPKmFvgMZX3DCgYeYNniMaQ5piTXghGhPLdTmZ33hYNpem98f/UHRwSxvhqhXx4anMA3/EmhiOlJPJnSBOb3uQcpOE65VhujPpAms/Bu4u+x3swRbeB24mTV4LgB+AFuLedkPkcmmAAAAAElFTkSuQmCC"/>
@@ -155,114 +133,11 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
 
         <main class="main-content">
 
-            <!--== Start Hero Area Wrapper ==-->
-            <section class="hero-slider-area position-relative">
-                <div class="swiper hero-slider-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide hero-slide-item">
-                            <div class="container">
-                                <div class="row align-items-center position-relative">
-                                    <div class="col-12 col-md-6">
-                                        <div class="hero-slide-content">
-                                            <div class="hero-slide-text-img"><img src="assets/images/slider/text-theme.webp" width="427" height="232" alt="Image"></div>
-                                            <h2 class="hero-slide-title">CLEAN FRESH</h2>
-                                            <p class="hero-slide-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
-                                            <a class="btn btn-border-dark" href="index.php">BUY NOW</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="hero-slide-thumb">
-                                            <img src="./img/ezgif.com-gif-maker.png" width="841" height="832" alt="Image">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hero-slide-text-shape"><img src="assets/images/slider/text1.webp" width="70" height="955" alt="Image"></div>
-                            <div class="hero-slide-social-shape"></div>
-                        </div>
-                        <div class="swiper-slide hero-slide-item">
-                            <div class="container">
-                                <div class="row align-items-center position-relative">
-                                    <div class="col-12 col-md-6">
-                                        <div class="hero-slide-content">
-                                            <div class="hero-slide-text-img"><img src="assets/images/slider/text-theme.webp" width="427" height="232" alt="Image"></div>
-                                            <h2 class="hero-slide-title">Facial Cream</h2>
-                                            <p class="hero-slide-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.</p>
-                                            <a class="btn btn-border-dark" href="index.php">BUY NOW</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <div class="hero-slide-thumb">
-                                            <img src="assets/images/slider/slider2.webp" width="841" height="832" alt="Image">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hero-slide-text-shape"><img src="assets/images/slider/text1.webp" width="70" height="955" alt="Image"></div>
-                            <div class="hero-slide-social-shape"></div>
-                        </div>
-                    </div>
-                    <!--== Add Pagination ==-->
-                    <div class="hero-slider-pagination"></div>
-                </div>
-                <div class="hero-slide-social-media">
-                    <a href="https://www.pinterest.com/" target="_blank" rel="noopener"><i class="fa fa-pinterest-p"></i></a>
-                    <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
-                </div>
-            </section>
-            <!--== End Hero Area Wrapper ==-->
+          
 
-            <!--== Start Product Category Area Wrapper ==-->
-            <section class="section-space pb-0">
-                <div class="container">
-                     <div class="row g-3 g-sm-6 d-flex justify-content-center">
-                        <div class="col-6 col-lg-4 col-lg-2 col-xl-2">
-                            <!--== Start Product Category Item ==-->
-                            <a href="hare-care.php" class="product-category-item">
-                                <img class="icon" src="assets/images/shop/category/1.webp" width="70" height="80" alt="Image-HasTech">
-                                <h3 class="title">Hare care</h3>
-                                <span class="flag-new">new</span>
-                            </a>
-                            <!--== End Product Category Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 col-lg-2 col-xl-2">
-                            <!--== Start Product Category Item ==-->
-                            <a href="skin-care.php" class="product-category-item" data-bg-color="#FFEDB4">
-                                <img class="icon" src="assets/images/shop/category/2.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Skin care</h3>
-                            </a>
-                            <!--== End Product Category Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 col-lg-2 col-xl-2 mt-lg-0 mt-sm-6 mt-4">
-                            <!--== Start Product Category Item ==-->
-                            <a href="lip-stick.php" class="product-category-item" data-bg-color="#DFE4FF">
-                                <img class="icon" src="assets/images/shop/category/3.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Lip stick</h3>
-                            </a>
-                            <!--== End Product Category Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 col-lg-2 col-xl-2 mt-xl-0 mt-sm-6 mt-4">
-                            <!--== Start Product Category Item ==-->
-                            <a href="face-care.PHP" class="product-category-item" data-bg-color="#FFEACC">
-                                <img class="icon" src="assets/images/shop/category/4.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Face skin</h3>
-                                <span data-bg-color="#835BF4" class="flag-new">sale</span>
-                            </a>
-                            <!--== End Product Category Item ==-->
-                        </div>
-                        <div class="col-6 col-lg-4 col-lg-2 col-xl-2 mt-xl-0 mt-sm-6 mt-4">
-                            <!--== Start Product Category Item ==-->
-                            <a href="blusher.php" class="product-category-item" data-bg-color="#FFDAE0">
-                                <img class="icon" src="assets/images/shop/category/5.webp" width="80" height="80" alt="Image-HasTech">
-                                <h3 class="title">Blusher</h3>
-                            </a>
-                            <!--== End Product Category Item ==-->
-                        </div>
+
                         
-                    </div>
-                </div>
-            </section>
+
             <!--== End Product Category Area Wrapper ==-->
 
             <!--== Start Product Area Wrapper ==-->
@@ -270,10 +145,6 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <div class="section-title text-center">
-                                <h2 class="title">Top sale</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
-                            </div>
                         </div>
                     </div>
                     <div class="row mb-n4 mb-sm-n10 g-3 g-sm-6">
@@ -284,8 +155,14 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
                             <div class="product-item">
                                 <div class="product-thumb">
                                     <a class="d-block" href="product-details.php?id=<?php echo $value->getId()?>">
-                                        <img src="./img/<?php echo $value->getImage()?>" width="370" height="450" alt="Image-HasTech">
-                                    </a>
+                                    <?php
+                            $bdd = new PDO('mysql:host=localhost;dbname=e-commerce;charset=utf8','root','');
+                            $req = $bdd->query('SELECT photo From product'  );
+                            while($donnees = $req->fetch()){
+                                echo('<img styles ="width:50px;hight:50px;border-radius;:500px;" src ="'.$donnees['photo'].'"/><br>' );
+                                
+                            }
+                            ?>                                    </a>
                                     <span class="flag-new">new</span>
                                     <div class="product-action">
                                         <button type="button" class="product-action-btn action-btn-quick-view" value="<?php echo $value->getId() ?>"  data-bs-toggle="modal" data-bs-target="#action-QuickViewModal">
@@ -341,63 +218,7 @@ $cart = $cartManager->getCart($_COOKIE['cartCookie']);
           
         </main>
 
-        <!--== Start Footer Area Wrapper ==-->
-        <footer class="footer-area">
-            <!--== Start Footer Main ==-->
-            <div class="footer-main">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="widget-item">
-                                <div class="widget-about">
-                                    <a class="widget-logo" href="index.php">
-                                        <img src="assets/images/logo.webp" width="95" height="68" alt="Logo">
-                                    </a>
-                                    <p class="desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-5 mt-md-0 mt-9">
-                            <div class="widget-item">
-                                <h4 class="widget-title">Information</h4>
-                                <ul class="widget-nav">
-                                  
-                                    <li><a href="about-us.php">About us</a></li>
-                                    <li><a href="contact.php">Contact</a></li>
-                                    <li><a href="faq.php">Privacy</a></li>
-                                    <li><a href="my-account.php">Login</a></li>
-                                    <li><a href="#">Shop</a></li>
-                                    <li><a href="my-account.php">My Account</a></li>
-                                    <li><a href="faq.php">FAQs</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mt-lg-0 mt-6">
-                            <div class="widget-item">
-                                <h4 class="widget-title">Social Info</h4>
-                                <div class="widget-social">
-                                    <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
-                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
-                                    <a href="https://www.pinterest.com/" target="_blank" rel="noopener"><i class="fa fa-pinterest-p"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--== End Footer Main ==-->
 
-            <!--== Start Footer Bottom ==-->
-            <div class="footer-bottom">
-                <div class="container pt-0 pb-0">
-                    <div class="footer-bottom-content">
-                        <p class="copyright">© 2022 Brancy. Made with <i class="fa fa-heart"></i> by <a target="_blank" href="https://themeforest.net/user/codecarnival">Codecarnival.</a></p>
-                    </div>
-                </div>
-            </div>
-            <!--== End Footer Bottom ==-->
-        </footer>
-        <!--== End Footer Area Wrapper ==-->
 
         <!--== Scroll Top Button ==-->
         <div id="scroll-to-top" class="scroll-to-top"><span class="fa fa-angle-up"></span></div>
