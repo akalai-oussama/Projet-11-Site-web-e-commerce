@@ -1,1 +1,0 @@
-SELECT fullName FROM `merradou`;
